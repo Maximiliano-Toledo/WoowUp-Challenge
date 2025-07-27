@@ -28,3 +28,7 @@ Servidor en: http://localhost:3000
 **Manejo de errores:** Respuesta HTTP 500 con mensaje descriptivo si falla la API externa
 
 **Supuestos:** Se asume que JSONPlaceholder siempre está disponible y devuelve datos consistentes
+
+## Algunos usuarios pueden no tener posts. ¿Los incluís con postsCount: 0 o los omitís?
+
+Aquellos usuarios sin posts se representan con`postsCount: 0`. Esta decisión permite mantener la integridad del conjunto de datos y tener el analisis completo de usuarios activos e inactivos
