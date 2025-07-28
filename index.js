@@ -4,7 +4,6 @@ const axios = require('axios')
 const app = express()
 const PORT = 3000;
 
-
 // APIs propias que exponen los datos consumidos
 app.get('/users', async (req, res) => {
     try {
@@ -63,5 +62,4 @@ app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT} : http://localhost:${PORT}`);
     console.log(`Users summary: http://localhost:${PORT}/users/posts-summary`);
     console.log(`Con filtro minPosts: http://localhost:${PORT}/users/posts-summary?minPosts=5`);
-    console.log(`users : http://localhost:${PORT}/users/posts-summary`);
 })
