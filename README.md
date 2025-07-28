@@ -3,22 +3,25 @@
 ## Ejecutar localmente
 
 ```bash
+git clone https://github.com/Maximiliano-Toledo/WoowUp-Challenge.git
 npm install
 npm run dev
 ```
 
 Servidor en: http://localhost:3000
 
-## 📋 Endpoints
+## Endpoints
 
 - `GET /users/posts-summary` - Usuarios con posts válidos
 - `GET /users/posts-summary?minPosts=5` - Filtrar por posts mínimos  
 
-## ⚙️ Decisiones técnicas
+## Decisiones técnicas
 
 **Validación de emails:** Solo se incluyen usuarios cuyo email contenga `@` (validación simple pero efectiva)
 
 **Filtro minPosts:** Se aplica después de procesar todos los datos, valor por defecto es `0`
+
+**Retry simple:** Un reintento automático si falla la primera llamada a la API externa
 
 **Campo usernameTagline:** Formato `@{username} from {city}` combinando datos del usuario
 
