@@ -37,11 +37,9 @@ app.get('/users/posts-summary', async (req, res) => {
 
         const result = usersData
             .filter(user => {
-                // excluir usuarios nulos/undefined o con emails inválidos -> podria haber utilizado REGEX
                 return user && user.email && user.email.includes('@');
             })
             .map(user => {
-                // si no hay posts, filter devuelve [], y .length = 0
                 const usersPostsCount = postsData.filter(post => post.userId === user.id).length;
 
                 return {
