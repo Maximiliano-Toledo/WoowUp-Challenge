@@ -1,4 +1,4 @@
-# WooWup Challenge - Users Posts API
+# WoowUp Challenge - Users Posts API
 
 ## Ejecutar localmente
 
